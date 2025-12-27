@@ -1,0 +1,496 @@
+*{
+    margin:0px; 
+    
+    font-family: var();   
+}
+
+:root {
+    --tiktok :  "TikTok Sans", sans-serif;
+    --logo :  "Danfo", serif;
+    --playfair : "Playfair Display", serif;
+}
+.navrightimg1 , .navrightimg2{
+    width: 35px;
+    margin:0 10px; 
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   background-color: rgba(47,94,138,0.4);
+    font-family: var(--tiktok);
+   height: 100px;
+   align-items: center;
+   color:rgb(255, 255, 255);
+
+   
+ 
+     
+}
+
+nav .left{
+    display: flex;
+
+    
+}
+nav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     font-weight:100;
+    font-size:15px;
+    transition: all linear 0.1s;
+    
+}
+
+nav .left .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    gap:20px;
+    font-weight: 400;
+    font-size: 15;
+    
+    
+}
+
+nav .left .logo{
+    
+    font-family: var(--logo);
+    font-size:40px;
+   margin-left: 28px;
+   margin-right: 33px;
+   transition: all linear 0.1s;
+   
+}
+ 
+.logolink{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+.logolink:hover{
+    .logo{
+        font-size: 44px;
+    }
+}
+
+.navcommonlink{
+    color:white;
+    text-decoration: none;
+   transition: all linear 0.1s;
+
+
+}
+
+.navcommonlink:hover{
+    
+        font-size:14px;
+   
+}
+ 
+.navcontainer{
+background-color: rgba(27, 93, 141,0.8);
+    height:600px;
+    background-image: url(shoppinggirl.png);
+    background-size:500px;
+    background-position-x:95%;
+    background-position-y: 40px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navMainHead{
+    color:white;
+    font-size: 65px;
+    font-family: var(--playfair);
+    margin:40px 40px 20px 70px
+ 
+
+}
+.navMainText{
+    color:white;
+    font-weight: 600;
+    font-family: var(--tiktok);
+    font-size: 25px;
+    margin:20px 70px;
+}
+.navMainbtn{
+    margin:20px -20px 40px 70px;
+     
+    font-size: 18px;
+    font-family: var(--tiktok);
+    font-weight: 500;
+    color: rgba(27, 93, 141,1);
+    padding: 8px 18px;
+
+
+}
+#navbtn{
+    color:white;
+    background-color:  rgba(27, 93, 141,0.2);
+    border:1px white solid;
+    border-radius: 5px;
+}
+
+
+
+.navbtnlink{
+    color:white;
+    text-decoration: none;
+        transition: all linear 0.1s;
+}
+
+#navbtnlink1id{
+        color: rgba(27, 93, 141,1);
+
+}
+
+.navbtnlink:hover{
+    font-size: 16px;
+    
+
+}
+
+.sectionone, .sectiontwo, .sectionthree{
+    
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap:25px;
+    width:300px;
+    padding-bottom: 30px;
+    
+    
+}
+ 
+section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+     
+    color:white;
+
+}
+
+.sectioncontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    gap:5px
+    
+}
+.sectionheading{
+    font-size: 25px;
+    font-family: var(--tiktok);
+    font-weight: 600;
+}
+
+.sectionbtn{
+    font-size: 16px;
+    padding:5px 15px;
+   color: black;
+   background-color: white;
+   border-radius: 5px;
+}
+
+.sectionbtnlink:hover{
+    .sectionbtn{
+                    font-size: 15px;
+                    color:white;
+                    background-color: rgba(57, 52, 52,0.6);
+                    border-radius: 8px;
+                
+    }
+
+}
+
+.sectionlink{
+    transition:all linear 0.1s;
+}
+
+.sectionone{
+    background-image: url(pexels-visible-gain-447213792-19222711.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}.sectiontwo{
+    background-image: url(handsome-man.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}.sectionthree{
+    background-image: url(pexels-koolshooters-8520564.jpg);
+    background-size:300px;
+    background-repeat:no-repeat;
+
+
+   
+}
+
+.pdtimg img{
+   
+    
+ width:15vw;
+    
+}
+
+.pdtrow1 , .pdtrow2{
+    display:flex;
+    flex-direction: row;
+ 
+    justify-content: center;
+    gap:30px;
+    
+    
+ 
+
+}
+
+.featurehead{
+    color:black;
+    font-size: 50px;
+    font-style: var(--playfair);
+
+    font-weight: 550;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.featurepdt{
+   background-color: rgb(244, 247, 249);
+   
+}
+
+.featureheadline{
+    width:10%;
+
+    background-color:rgb(77, 102, 123);
+    height:3px;
+     align-self: center;
+     margin: 0 auto;
+     margin-bottom: 80px;
+     border:none;
+
+
+}
+.pdtname{
+    font-size: 18px;
+    font-family: var(--playfair);
+    font-weight: 500;
+    padding:10px 0px 3px 0px ;
+}
+
+.pdtfor{
+    font-size: 15px;
+    font-family: var(--playfair);
+    font-weight:300;
+    color:rgb(103, 102, 102);
+    padding:3px 0 3px ;
+
+}
+
+.pdtprice{
+    font-size: 20px;
+    font-family: var(--playfair);
+    font-weight: 500;
+    padding:3px 0;
+
+}
+.pdtprice del{
+    font-weight:300;
+    color:gray;
+}
+
+.pdtratting{
+    padding-bottom: 90px;
+
+}
+ 
+.below{
+    display: flex;
+    height:400px;
+     
+background-color: rgba(27, 93, 141,0.8);
+
+  background-image: url(All_Over_Print_Cotton_Tshirt__Paul_Klee_Harbinger_of_Autumn_Men_s_Crew_Neck_T-shirt__Wearable_Art_Vintage_Artwork_Graphic_Tee_Art_Lover_Gift-removebg-preview-Picsart-AiImageEnhancer.png);
+  background-size:500px ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+color:white;
+background-position-x:90%;
+background-position-y:100%;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 10vw;
+}
+.belowcontent1{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--playfair);
+    color:white;
+    padding-bottom: 20px;
+
+}
+.belowcontent2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--playfair);
+    color:white;
+    padding-bottom: 20px;
+
+}
+
+.belowcontent3{
+    font-size: 14px;
+    font-weight: 100;
+    font-family: var(--playfair);
+    color:white;
+    padding-bottom: 20px;
+
+}.belowcontent4{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: var(--playfair);
+    color:white;
+    padding-bottom: 20px;
+
+}
+
+.belowcontentbtn button{
+    font-size: 16px;
+    padding:5px 15px;
+   color: black;
+   background-color: white;
+ border:none;
+   transition: all linear 0.1s;
+   /* border-radius: 10px; */
+}
+
+.belowcontentbtnlink:hover{
+   .belowcontentbtn button{
+    color:white;
+    background-color: black;
+    cursor:pointer;
+    font-size: 18px;
+}
+   } 
+
+.reput{
+    display: flex;
+    flex-direction: row;
+    gap:10%;
+    margin:100px 5vw;
+    justify-content: center;
+    align-items: center;
+  padding-bottom: 110px;
+ 
+
+}
+
+.reput1head{
+
+    font-size: 18px;
+    font-family: var(--tiktok);
+    color:black;
+    font-weight: 600;
+    display: flex;
+     justify-content: center;
+     margin:20px 0;
+}
+.reput1content{
+    font-size: 14px;
+    font-family: var(--tiktok);
+     color:rgb(94, 93, 93);
+     line-height: 25px;
+     
+}
+
+.reput1img{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+  
+    flex-direction: row;
+    justify-content:space-between;
+   height:350px;
+   padding:0 8vw;
+    border-bottom:1px solid rgb(220, 219, 219);
+
+}
+
+ .footer1{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+     
+ }
+ .footercontentcontainer{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    color:rgb(98, 97, 97);
+    font-family: var(--tiktok);
+ 
+ }
+ .footer1heading{
+    font-family: var(--tiktok);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+      
+ }
+ .lastfooter1{
+    display: flex;
+  
+   flex-direction: column;
+    justify-content: flex-start;
+ 
+    padding-top: 65px ;
+  
+ }
+
+ .footerapplogo img{
+    width:140px;
+ }
+
+
+ .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:50px 3vw;
+    color:rgb(102, 101, 101);
+    font-family: var(--tiktok);
+    font-size: 13px;
+ }
+
+
+.footercommonlink{
+       color:rgb(98, 97, 97);
+
+    text-decoration: none;
+    transition: all linear 0.1s;
+}
+
+.footercommonlink:hover{
+    font-size: 16.5px ;
+    color:black;
+}
+
+ 
