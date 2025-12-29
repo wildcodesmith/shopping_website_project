@@ -1,0 +1,488 @@
+:root {
+    --tiktok: "TikTok Sans", sans-serif;
+    --logo: "Danfo", serif;
+    --playfair: "Playfair Display", serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: var(--tiktok);
+    font-weight: 400;
+    color: rgb(53, 52, 52);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+
+
+
+
+    gap: 40px;
+
+}
+
+.leftcontent {
+    display: flex;
+    gap: 20px;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+
+}
+
+.navlogo {
+    color: black;
+    font-family: var(--logo);
+    font-size: 40px;
+}
+
+.hero {
+    background-color: rgb(246, 248, 250);
+    padding-top: 60px;
+    /* padding-left: 30px; */
+
+
+}
+
+.herotop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.heroimgbig img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.heroimgbig:hover img {
+    transform: scale(2);
+    /* zoom level */
+}
+
+.heroimgbig {
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+
+}
+
+.heroimgsmallcontainer {
+    display: flex;
+    gap: 15px;
+    width: 600px;
+    margin-top: 15px;
+
+}
+
+.heroimgsmall img {
+    width: 100%;
+
+
+}
+
+.heroimgsmall_link:hover{
+
+    #imgshoes1 , #imgshoes2, #imgshoes3 , #imgshoes4{
+        box-shadow: 0 0  15px rgb(124, 123, 123);
+    }
+    
+}
+
+.herotopcontent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.herotoplink {
+    display: flex;
+    gap: 15px;
+    color: rgb(142, 142, 142);
+    font-family: var(--tiktok);
+
+}
+
+.herotopfor {
+    margin-top: 20px;
+    font-family: var(--tiktok);
+    margin-bottom: 20px;
+}
+
+.herotopheading {
+    font-family: var(--playfair);
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.herotopprice {
+    font-size: 25px;
+    font-weight: 550;
+    font-style: var(--playfair);
+    margin-bottom: 15px;
+}
+
+.herotopprice span {
+    font-weight: 100;
+    font-family: var(--tiktok);
+    font-size: 16px;
+    color: rgb(73, 71, 71);
+
+}
+
+.herotopprice del {
+    color: rgb(132, 131, 131);
+}
+
+.herotopdescription {
+    font-size: 15px;
+    font-family: var(--tiktok);
+    color: rgb(113, 112, 112);
+    line-height: 30px;
+    max-width: 600px;
+
+}
+
+.herotopbtnsection {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.herotopinp {
+    width: 45px;
+    height: 30px;
+
+}
+
+.herotopbtn {
+    width: 250px;
+    height: 36px;
+    color: white;
+    background-color: rgb(57, 130, 208);
+    border: none;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    font-size: 14px;
+    font-family: var(--tiktok);
+
+
+
+}
+
+.herotopbtnlink:hover {
+    .herotopbtn {
+        background-color: rgb(45, 115, 188);
+        font-size: 16px;
+
+
+    }
+}
+
+.hrlineherotop {
+    width: 100%;
+    margin-top: 25px;
+    border: rgb(229, 224, 224) solid .5px;
+
+
+
+}
+
+.heromiddescriptionline {
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(221, 217, 217);
+
+
+}
+
+.heromiddescription {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+    width: 1250px;
+    margin: 0 auto;
+
+
+
+
+}
+
+.heromiddescription h2 {
+    font-family: var(--tiktok);
+    font-size: 27px;
+    font-weight: 500;
+
+
+
+
+}
+
+.heromiddescriptioncontent {
+    line-height: 25px;
+    color: rgb(109, 108, 108);
+    font-family: var(--tiktok);
+    margin-bottom: 50px;
+
+
+}
+
+.heromidsec1 {
+    display: grid;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+
+
+}
+
+.heromidsec1first {
+    /* background-color: aliceblue; */
+
+    background-image: url(product-about-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.heromidsec1second {
+    /* background-color: aliceblue; */
+
+    background-image: url(product-about-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.heromidsec2 {
+    display: grid;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+}
+
+.heromidsec2first {
+    background-image: url("Screenshot\ 2025-12-27\ at\ 8.11.13\ PM.png");
+
+    background-size: cover;
+}
+
+.heromidsec2second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: white;
+
+    padding: 0 70px;
+}
+
+.heromidsec2second .head {
+    color: black;
+    font-family: var(--tiktok);
+    font-size: 20px;
+
+    margin: 15px 0 10px;
+
+}
+
+.heromidsec2second .text {
+    font-family: var(--tiktok);
+    color: rgb(109, 108, 108);
+    font-size: 16px;
+
+
+}
+
+.heromidsec3 {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.heromidsec3first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 70px;
+    background-color: white;
+}
+
+.heromidsec3second {
+    background-image: url("Screenshot\ 2025-12-27\ at\ 8.11.00\ PM.png");
+    background-size: cover;
+
+
+}
+
+.heromidsec3first .head {
+    color: black;
+    font-size: 20px;
+    font-family: var(--tiktok);
+}
+
+.heromidsec3first .text {
+    color: rgb(109, 108, 108);
+    margin: 15px 0 10px;
+    line-height: 25px;
+
+    font-size: 16px;
+    font-family: var(--tiktok);
+}
+.relatedpdtcontainer{
+    margin:180px 220px;
+    padding-bottom: 180px;
+
+
+
+}
+.relatedpdthead{
+    color:black;
+    font-size: 45px ;
+    font-weight:550;
+    font-family: var(--tiktok);
+    margin-bottom: 30px;
+
+}
+
+.relatedpdtbox{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.relatedpdtbox img{
+    width:300px;
+    transition: all linear 0.1s;
+}
+.relatedproducts .head{
+    color:black;
+    font-size: 17px;
+    font-family: var(--tiktok);
+    font-weight: 500;
+    margin:20px 0;
+
+
+}
+.relatedproducts .for{
+    color:rgb(145, 145, 145);
+    font-size: 17px;
+    font-family: var(--tiktok);
+    font-weight: 300;
+    margin:15px 0;
+
+
+}
+.relatedproductlink:hover{
+   .black_hoodie{
+    box-shadow: 0 0 20px  rgb(107, 107, 105);
+   }
+   .pink_tshirt{
+    box-shadow: 0 0 20px  rgb(124, 89, 95);
+   }
+   .green_hoodie{
+    box-shadow: 0 0 20px  rgb(105, 107, 105);
+   }
+}
+
+footer{
+    display: flex;
+  
+    flex-direction: row;
+    justify-content:space-between;
+   height:350px;
+   padding:0 8vw;
+    border-bottom:1px solid rgb(220, 219, 219);
+
+}
+
+ .footer1{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+     
+ }
+ .footercontentcontainer{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    color:rgb(98, 97, 97);
+    font-family: var(--tiktok);
+ 
+ }
+ .footer1heading{
+    font-family: var(--tiktok);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+      
+ }
+ .lastfooter1{
+    display: flex;
+  
+   flex-direction: column;
+    justify-content: flex-start;
+ 
+    padding-top: 65px ;
+  
+ }
+
+ .footerapplogo img{
+    width:140px;
+ }
+
+
+ .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:50px 3vw;
+    color:rgb(102, 101, 101);
+    font-family: var(--tiktok);
+    font-size: 13px;
+ }
+
+
+.footercommonlink{
+       color:rgb(98, 97, 97);
+
+    text-decoration: none;
+    transition: all linear 0.1s;
+}
+
+.footercommonlink:hover{
+    font-size: 16.5px ;
+    color:black;
+}
+
+ 

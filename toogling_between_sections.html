@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .reshow{
+            display: none;
+        }
+        .hide{
+        display:none;
+
+    }
+    .show {
+        display: block;
+         
+    }
+    </style>
+</head>
+<body>
+    <button onclick="description()">Description</button>
+<button onclick="review()">Reviews</button>
+
+<div id="description" >This is the product description.</div>
+<div id="reviews" style="display: none;">These are the reviews.</div>
+<script>
+    
+   function description(){
+    document.getElementById("description").style.display="block";
+    document.getElementById("reviews").style.display="none";
+
+   }
+      
+function review(){
+     document.getElementById("description").style.display="none";
+    document.getElementById("reviews").style.display="block";
+
+}
+
+       
+    
+
+  
+
+ 
+
+</script>
+
+</body>
+</html>

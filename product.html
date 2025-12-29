@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNK Products</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Danfo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="productstyle.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="navlogo">DNK</div>
+            <div class="leftcontent">
+                <div>EVERYTHING</div>
+                <div>WOMEN</div>
+                <div>MEN </div>
+                <div>ACCESSORIES</div>
+            </div>
+        </div>
+        <div class="navright">
+            <div>ABOUT </div>
+            <div>CONTACT US</div>
+            <div><b>$0.00</b></div>
+            <div class="navcart"><img src="shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="add to cart">
+            </div>
+            <div class="navaccount"><img src="account_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+                    alt="create account"></div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="herotop">
+            <div class="heroimg">
+                <div class="heroimgbig"><img src="sports-shoe3.jpg" alt="product-image" class="shoesproduct-image">
+                </div>
+                <div class="heroimgsmallcontainer">
+                   <a class="heroimgsmall_link"> <div class="heroimgsmall"><img src="sports-shoe1-600x600.jpg" alt="product-image" id="imgshoes1"
+                            onclick="imgshoes1func()"></div> </a>
+                   <a class="heroimgsmall_link"> <div class="heroimgsmall"><img src="sports-shoe2-600x600.jpg" alt="product-image" id="imgshoes2"
+                            onclick="imgshoes2func()"></div> </a>
+                   <a class="heroimgsmall_link"> <div class="heroimgsmall"><img src="sports-shoe3-600x600.jpg" alt="product-image" id="imgshoes3"
+                            onclick="imgshoes3func()"></div> </a>
+                   <a class="heroimgsmall_link"> <div class="heroimgsmall"><img src="sports-shoe1-600x600.jpg" alt="product-image" id="imgshoes4"
+                            onclick="imgshoes1func()"></div> </a>
+
+                    <script>
+
+                        function imgshoes1func() {
+
+                            document.getElementById("imgshoes1").addEventListener('click', () => {
+                                document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe1-600x600.jpg")
+                            })
+
+                        }
+                        document.getElementById("imgshoes1").addEventListener('mouseover', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe1-600x600.jpg")
+
+
+                        })
+                        document.getElementById("imgshoes1").addEventListener('mouseout', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe3.jpg")
+                        })
+                        document.getElementById("imgshoes2").addEventListener('mouseover', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe2-600x600.jpg")
+                        })
+                        document.getElementById("imgshoes2").addEventListener('mouseout', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe3.jpg")
+                        })
+                        document.getElementById("imgshoes3").addEventListener('mouseover', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe3-600x600.jpg")
+                        })
+                        document.getElementById("imgshoes3").addEventListener('mouseout', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe3.jpg")
+                        })
+
+                        document.getElementById("imgshoes4").addEventListener('mouseover', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe1-600x600.jpg")
+
+                        })
+
+                        document.getElementById("imgshoes4").addEventListener('mouseout', () => {
+                            document.querySelector(".shoesproduct-image").setAttribute("src", "sports-shoe3.jpg")
+
+                        })
+
+
+
+
+
+                    </script>
+
+                </div>
+            </div>
+            <div class="herotopcontent">
+                <div class="herotoplink">
+                    <div>Home &nbsp; /</div>
+                    <div>Men &nbsp;/</div>
+                    <div>DNK Blue Shoes</div>
+                </div>
+                <div class="herotopfor">Men</div>
+                <div class="herotopheading">DNK Blue Shoes</div>
+                <div class="herotopprice"><del>$300.00 </del> &nbsp;$240.00 <span> + Free Shipping</span></div>
+                <div class="herotopdescription">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                    vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                    sit amet a augue. Sed non neque elit sed.</div>
+                <hr class="hrlineherotop">
+                <div class="herotopbtnsection">
+                    <input type="number" name="quantity" min="0" class="herotopinp" placeholder="1">
+                    <a href="#" class="herotopbtnlink"><button class="herotopbtn">ADD TO CART</button></a>
+
+
+                </div>
+                <hr class="hrlineherotop">
+
+                <!-- scroll zoom in effect -->
+                <script>
+                    const container = document.querySelector('.heroimgbig');
+                    const img = container.querySelector('img');
+
+                    container.addEventListener('mousemove', (e) => {
+                        const rect = container.getBoundingClientRect();
+                        const x = ((e.clientX - rect.left) / rect.width) * 100;
+                        const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+                        img.style.transformOrigin = `${x}% ${y}%`;
+                    });
+
+                    container.addEventListener('mouseleave', () => {
+                        img.style.transformOrigin = 'center center';
+                    });
+                </script>
+
+
+
+
+            </div>
+
+        </div>
+        <hr class="heromiddescriptionline">
+
+        <!-- <button class="descriptionbtn">Description</button>
+        <button class="reviewbtn">Reviews</button> -->
+
+
+
+        <div class="heromid">
+
+            <div class="heromiddescription">
+
+                <h2>Product description</h2>
+                <div class="heromiddescriptioncontent">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt culpa reprehenderit aspernatur
+                    vitae nulla consectetur dolorem itaque rem a? Corrupti nobis iusto dignissimos itaque! Soluta vitae
+                    dolor nostrum minima quas nobis consequuntur, eum consequatur similique ab minus. Atque voluptatum
+                    ea excepturi facilis quaerat repudiandae. Excepturi, officia quas! Fuga saepe, vel possimus officiis
+                    dolorem sint eveniet dicta quam delectus voluptates beatae ex omnis aliquid hic cum exercitationem
+                    sunt quo illum inventore eaque consequuntur assumenda, ad molestias. Inventore, necessitatibus
+                    reprehenderit! Quaerat soluta quibusdam esse, labore enim accusantium voluptatibus nesciunt libero
+                    ratione quia quo eius, eveniet neque earum possimus sint tempore molestias?
+                    <br><br><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate debitis, consectetur ratione,
+                    exercitationem, at vero hic accusantium quisquam quibusdam a odit molestiae vitae inventore
+                    molestias eveniet deserunt possimus.
+                </div>
+                <div class="heromidsec1">
+
+                    <div class="heromidsec1first"></div>
+                    <div class="heromidsec1second"></div>
+
+
+                </div>
+                <div class="heromidsec2">
+
+                    <div class="heromidsec2first"></div>
+                    <div class="heromidsec2second">
+                        <div class="head">Ut enim ad minim</div>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ab itaque
+                            aperiam quo fugit similique. Enim quos mollitia soluta placeat tempore.</div>
+
+                        <div class="head">Quis nostrud</div>
+                        <div class="text">Ab itaque aperiam quo fugit similique. Enim quos mollitia soluta placeat
+                            tempore.</div>
+
+                        <div class="head">Duis aute irure</div>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab itaque aperiam quo
+                            fu .</div>
+
+                    </div>
+
+                </div>
+                <div class="heromidsec3">
+                    <div class="heromidsec3first">
+                        <div class="head">More about the product</div>
+                        <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, ad ullam!
+                            Maxime optio eum nam? Officiis veniam corrupti sit, magnam voluptatibus placeat similique
+                            deleniti architecto libero omnis aperiam reiciendis aliquam!</div>
+                    </div>
+                    <div class="heromidsec3second"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relatedpdtcontainer">
+            <div class="relatedpdthead">Related Products</div>
+            <div class="relatedpdtbox">
+                <div class="relatedproducts">
+                   <a href="#" class="relatedproductlink"> <div class="img"><img src="product-hoodie1-600x600.jpg" alt="hodoie" class="black_hoodie"></div></a>
+                    <div class="head">Black Hoddie </div>
+                    <div class="for">Men</div>
+                    <div class="price">$150.00</div>
+                    <div class="rating">&#9733;&#9733;&#9733;&#9733; &#9734;</div>
+                </div>
+                <div class="relatedproducts">
+                  <a href="#" class="relatedproductlink">  <div class="img"><img src="tshirt3-600x600.jpg" alt="pink tshirt" class="pink_tshirt"> </div></a>
+                    <div class="head">DNK pink Tshirt</div>
+                    <div class="for">Women</div>
+                    <div class="price">$40.00</div>
+                    <div class="rating">&#9733;&#9733;&#9733;&#9733; &#9734;</div>
+                </div>
+                <div class="relatedproducts">
+                   <a href="#" class="relatedproductlink"> <div class="img"><img src="product-hoodie3-600x600.jpg" alt="green hoodie" class="green_hoodie"></div></a>
+                    <div class="head">Green Hoodie</div>
+                    <div class="for">Women</div>
+                    <div class="price">$150.00</div>
+                    <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        </hero>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <div class="footer1heading">Quick links</div>
+            <div class="footercontentcontainer">
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Home </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">About </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">My Account </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Cart </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Contact</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="footer1heading">For Her</div>
+            <div class="footercontentcontainer">
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Women Jeans </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Tops and Shirts </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Women Jackets </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Heels and Flats </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Women Accessories</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="footer1heading">For Him</div>
+            <div class="footercontentcontainer">
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Men Jeans </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Men Shirts </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Men Shoes </div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Men Accessories</div>
+                </a>
+                <a href="#" class="footercommonlink">
+                    <div class="footercontent">Men Jackets</div>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer1 lastfooter1">
+
+            <a href="#">
+                <div class="footerapplogo"><img src="appstorelogo.png" alt="appstore"></div>
+            </a>
+        </div>
+
+
+    </footer>
+
+    <div class="copyright">
+        <div class="copyone">Copyright &copy; 2025 || Home-Brandstore</div>
+        <div class="copytwo">Powered by Brandstore</div>
+    </div>
+
+</body>
+
+</html>
